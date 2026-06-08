@@ -1,117 +1,165 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Macro Markets Journal</title>
+<title>John Tae</title>
 
 <style>
 
 body {
-
-    max-width: 900px;
-
+    max-width: 1000px;
     margin: auto;
-
-    padding: 50px;
-
+    padding: 40px;
     font-family: "Helvetica Neue", Arial, sans-serif;
-
-    line-height: 1.8;
-
     color: #222;
-
+    line-height: 1.8;
 }
 
-h1 {
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
 
+.logo {
     font-size: 48px;
-
-    margin-bottom: 10px;
-
+    font-weight: 700;
 }
 
-h2 {
-
-    margin-top: 40px;
-
+.logo span {
+    color: #b22222;
 }
 
-a {
-
-    color: #0a66c2;
-
+nav a {
+    margin-left: 30px;
     text-decoration: none;
-
+    color: #333;
+    font-size: 20px;
 }
 
-a:hover {
+nav a:hover {
+    color: #b22222;
+}
 
+.section {
+    margin-bottom: 60px;
+}
+
+.section h2 {
+    font-size: 42px;
+    margin-bottom: 25px;
+}
+
+.about p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.links {
+    margin-top: 25px;
+}
+
+.links a {
+    margin-right: 25px;
+    text-decoration: none;
+    color: #0a66c2;
+}
+
+.paper {
+    margin-bottom: 30px;
+}
+
+.paper-title {
+    font-size: 26px;
+    font-weight: 600;
+    color: #b22222;
+    text-decoration: none;
+}
+
+.paper-title:hover {
     text-decoration: underline;
-
 }
 
-li {
-
-    margin-bottom: 15px;
-
+.paper-date {
+    color: #666;
+    margin-top: 5px;
 }
 
 </style>
-
 </head>
 
 <body>
 
-<h1>Macro Markets Journal</h1>
+<header>
+
+<div class="logo">
+    John <span>Tae</span>.
+</div>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#research">Research Notes</a>
+    <a href="resume.pdf">Resume</a>
+</nav>
+
+</header>
+
+<section class="section about" id="about">
+
+<h2>About</h2>
 
 <p>
-
-Independent research and market commentary on macroeconomics,
-
-energy markets, inflation, monetary policy, and investment themes.
-
+I am an Economics student at Cornell University with interests in macroeconomics, global markets, and investment research.
 </p>
 
-<hr>
+<p>
+Through this journal, I analyze how economic data, geopolitical developments, central bank policy, and market expectations influence asset prices across rates, commodities, equities, and broader financial markets.
+</p>
+
+<p>
+My goal is to develop a deeper understanding of how investors interpret information, price risk, and react to changing economic conditions. Topics covered include inflation, monetary policy, interest rates, commodities, equity markets, and major global macroeconomic developments.
+</p>
+
+<div class="links">
+    <a href="mailto:ht497@cornell.edu">Email</a>
+    <a href="https://www.linkedin.com">LinkedIn</a>
+    <a href="https://github.com">GitHub</a>
+</div>
+
+</section>
+
+<section class="section" id="research">
 
 <h2>Research Notes</h2>
 
-<ul>
+<div class="paper">
+    <a class="paper-title" href="hormuz.html">
+        The Strait of Hormuz and What It Revealed About Global Oil Markets
+    </a>
+    <div class="paper-date">June 2026</div>
+</div>
 
-<li>
+<div class="paper">
+    <div class="paper-title">
+        Treasury Yields and the Higher-for-Longer Environment
+    </div>
+    <div class="paper-date">Coming Soon</div>
+</div>
 
-<a href="hormuz.html">
+<div class="paper">
+    <div class="paper-title">
+        AI Investment, Capital Expenditure, and Global Growth
+    </div>
+    <div class="paper-date">Coming Soon</div>
+</div>
 
-The Strait of Hormuz and What It Revealed About Global Oil Markets
-
-</a>
-
-</li>
-
-<li>
-
-<a href="#">
-
-Inflation and Monetary Policy (Coming Soon)
-
-</a>
-
-</li>
-
-<li>
-
-<a href="#">
-
-Treasury Yields After Strong Jobs Report (Coming Soon)
-
-</a>
-
-</li>
-
-</ul>
+</section>
 
 </body>
-
 </html>
