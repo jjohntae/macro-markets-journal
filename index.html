@@ -90,24 +90,42 @@ margin-bottom:70px;
 
 /* ---------------- NAVIGATION ---------------- */
 
-.research-nav{
-display:flex;
-gap:35px;
-margin-bottom:50px;
-border-bottom:1px solid #ddd;
-padding-bottom:15px;
-}
-
 .research-nav a{
-padding-bottom:10px;
-font-size:21px;
-font-weight:600;
-color:#555;
+
+    text-decoration: none;
+
+    color:#555;
+
+    font-size:22px;
+
+    font-weight:600;
+
+    padding-bottom:12px;
+
+    border-bottom:3px solid transparent;
+
+    transition:0.2s;
+
 }
 
 .research-nav a:hover{
-color:#b22222;
-border-bottom:2px solid #b22222;
+
+    text-decoration:none;
+
+    color:#b22222;
+
+    border-bottom:3px solid #b22222;
+
+}
+
+.research-nav a.active{
+
+    text-decoration:none;
+
+    color:#b22222;
+
+    border-bottom:3px solid #b22222;
+
 }
 
 /* ---------------- RESEARCH ---------------- */
@@ -117,77 +135,48 @@ border-bottom:2px solid #b22222;
 }
 
 .category-header{
-
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
-
     border-bottom:1px solid #eee;
-
     padding-bottom:10px;
-
     margin-bottom:30px;
-
 }
 
 .category-header h3{
-
     font-size:34px;
-
     margin:0;
-
 }
 
 .view-all{
-
     text-decoration:none;
-
     color:#b22222;
-
     font-weight:600;
-
     font-size:18px;
-
 }
 
 .view-all:hover{
-
     opacity:.7;
-
 }
 
 .paper{
-
     margin-bottom:32px;
-
 }
 
 .paper-title{
-
     font-size:26px;
-
     font-weight:600;
-
     color:#b22222;
-
     text-decoration:none;
-
 }
 
 .paper-title:hover{
-
     text-decoration:underline;
-
 }
 
 .paper-date{
-
     color:#666;
-
     margin-top:4px;
-
 }
 
 </style>
@@ -266,11 +255,8 @@ Industry Research
 <!-- MACRO -->
 
 <div class="research-category" id="macro">
-
     <div class="category-header">
-
         <h3>Macro & Markets</h3>
-
             <a href="macro.html" class="view-all">
                 View all →
             </a>
