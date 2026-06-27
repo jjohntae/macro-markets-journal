@@ -9,86 +9,136 @@
 
 <style>
 
-body {
-    max-width: 1000px;
-    margin: auto;
-    padding: 40px;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    color: #222;
-    line-height: 1.8;
+html{
+    scroll-behavior:smooth;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 20px;
-    margin-bottom: 50px;
+body{
+    max-width:1000px;
+    margin:auto;
+    padding:40px;
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    color:#222;
+    line-height:1.8;
 }
 
-.logo {
-    font-size: 48px;
-    font-weight: 700;
+/* ---------------- HEADER ---------------- */
+
+header{
+    border-bottom:1px solid #ddd;
+    padding-bottom:30px;
+    margin-bottom:60px;
 }
 
-.logo span {
-    color: #b22222;
+.logo{
+    font-size:56px;
+    font-weight:700;
 }
 
-nav a {
-    margin-left: 30px;
-    text-decoration: none;
-    color: #333;
-    font-size: 20px;
+.logo span{
+    color:#b22222;
 }
 
-nav a:hover {
-    color: #b22222;
+.subtitle{
+    font-size:24px;
+    color:#555;
+    margin-top:-10px;
+    margin-bottom:18px;
 }
 
-.section {
-    margin-bottom: 60px;
+.tagline{
+    font-size:24px;
+    color:#444;
+    max-width:700px;
 }
 
-.section h2 {
-    font-size: 42px;
-    margin-bottom: 25px;
+/* ---------------- GENERAL ---------------- */
+
+.section{
+    margin-bottom:70px;
 }
 
-.about p {
-    font-size: 20px;
-    margin-bottom: 20px;
+.section h2{
+    font-size:42px;
+    margin-bottom:25px;
 }
 
-.links {
-    margin-top: 25px;
+.about p{
+    font-size:20px;
+    margin-bottom:22px;
 }
 
-.links a {
-    margin-right: 25px;
-    text-decoration: none;
-    color: #0a66c2;
+/* ---------------- CONTACT ---------------- */
+
+.contact-links{
+    display:flex;
+    gap:35px;
+    margin-top:40px;
+    margin-bottom:60px;
+    font-size:20px;
 }
 
-.paper {
-    margin-bottom: 30px;
+.contact-links a{
+    color:#333;
+    text-decoration:none;
 }
 
-.paper-title {
-    font-size: 26px;
-    font-weight: 600;
-    color: #b22222;
-    text-decoration: none;
+.contact-links a:hover{
+    color:#b22222;
 }
 
-.paper-title:hover {
-    text-decoration: underline;
+/* ---------------- NAVIGATION ---------------- */
+
+.research-nav{
+    display:flex;
+    gap:45px;
+    border-bottom:1px solid #ddd;
+    padding-bottom:18px;
+    margin-bottom:50px;
 }
 
-.paper-date {
-    color: #666;
-    margin-top: 5px;
+.research-nav a{
+    text-decoration:none;
+    color:#333;
+    font-size:22px;
+    font-weight:500;
+}
+
+.research-nav a:hover{
+    color:#b22222;
+}
+
+/* ---------------- RESEARCH ---------------- */
+
+.research-category{
+    margin-top:70px;
+}
+
+.research-category h3{
+    font-size:34px;
+    margin-bottom:30px;
+    padding-bottom:10px;
+    border-bottom:1px solid #eee;
+}
+
+.paper{
+    margin-bottom:32px;
+}
+
+.paper-title{
+    font-size:26px;
+    font-weight:600;
+    color:#b22222;
+    text-decoration:none;
+}
+
+.paper-title:hover{
+    text-decoration:underline;
+}
+
+.paper-date{
+    color:#666;
+    margin-top:4px;
 }
 
 </style>
@@ -99,71 +149,168 @@ nav a:hover {
 <header>
 
 <div class="logo">
-    John <span>Tae</span>.
+John <span>Tae</span>.
 </div>
-<nav>
-    <a href="mailto:ht497@cornell.edu">Email</a>
-    <a href="https://www.linkedin.com/in/johntaee/" target="_blank">LinkedIn</a>
-    <a href="Resume.pdf" target="_blank">Resume</a>
-</nav>
+
+<div class="subtitle">
+Economics @ Cornell University
+</div>
+
+<div class="tagline">
+Exploring how macroeconomics, capital markets, and investor expectations shape financial markets.
+</div>
+
 </header>
-<section class="section about" id="about">
+
+<!-- ABOUT -->
+
+<section class="section" id="about">
+
 <h2>About</h2>
 
 <p>
-I am an Economics student at Cornell University with interests in macroeconomics, global markets, and investment research.
+I started this journal as a way to apply what I learn in the classroom to real financial markets. Rather than simply following headlines, I enjoy asking why markets move and connecting economic theory with investor behavior.
 </p>
 
 <p>
-Through this journal, I analyze how economic data, geopolitical developments, central bank policy, and market expectations influence asset prices across rates, commodities, equities, and broader financial markets.
+These notes reflect my attempt to think like an investor—combining macroeconomics, market data, and company fundamentals to better understand how expectations shape asset prices.
 </p>
 
-<p>
-My goal is to develop a deeper understanding of how investors interpret information, price risk, and react to changing economic conditions. Topics covered include inflation, monetary policy, interest rates, commodities, equity markets, and major global macroeconomic developments.
-</p>
+<div class="contact-links">
+
+<a href="mailto:ht497@cornell.edu">
+Email
+</a>
+
+<a href="https://www.linkedin.com/in/johntaee/" target="_blank">
+LinkedIn
+</a>
+
+<a href="Resume.pdf" target="_blank">
+Resume
+</a>
+
+
+</div>
 
 </section>
 
-<section class="section" id="research">
+<!-- RESEARCH -->
 
-<h2>Market Notes</h2>
+<section class="section">
+
+<h2>Research</h2>
+
+<div class="research-nav">
+
+<a href="#macro">
+Macro & Markets
+</a>
+
+<a href="#equity">
+Equity Research
+</a>
+
+<a href="#industry">
+Industry Research
+</a>
+
+</div>
+
+<!-- MACRO -->
+
+<div class="research-category" id="macro">
+
+<h3>Macro & Markets</h3>
 
 <div class="paper">
-    <a class="paper-title" href="hormuz.html">
-        The Strait of Hormuz: How a Supply Shock Reshaped Global Oil Markets
-    </a>
-    <div class="paper-date">June 8 2026</div>
+<a class="paper-title" href="hormuz.html">
+The Strait of Hormuz: How a Supply Shock Reshaped Global Oil Markets
+</a>
+<div class="paper-date">
+June 8 2026
+</div>
 </div>
 
 <div class="paper">
-    <a class="paper-title" href="chinaPPI.html">
-        China’s Missing Oil Demand: A Temporary Solution or a Delayed Problem?
-    </a>
-    <div class="paper-date">June 11 2026</div>
+<a class="paper-title" href="chinaPPI.html">
+China's Missing Oil Demand: A Temporary Solution or a Delayed Problem?
+</a>
+<div class="paper-date">
+June 11 2026
+</div>
 </div>
 
 <div class="paper">
-    <a class="paper-title" href="transportation.html">
-        Why Strong Economic Growth Could Support Transportation Stocks
-    </a>
-    <div class="paper-date">June 25 2026</div>
+<a class="paper-title" href="transportation.html">
+Why Strong Economic Growth Could Support Transportation Stocks
+</a>
+<div class="paper-date">
+June 25 2026
+</div>
 </div>
 
 <div class="paper">
-    <a class="paper-title" href = "nasdaq.html">
-        Is the Nasdaq Rally Becoming Too Dependent on AI?
-    </a>
-    <div class="paper-date">June 25 2026</div>
+<a class="paper-title" href="nasdaq.html">
+Is the Nasdaq Rally Becoming Too Dependent on AI?
+</a>
+<div class="paper-date">
+June 25 2026
+</div>
 </div>
 
 <div class="paper">
-    <a class="paper-title" href = "koreanWon.html">
-        Understanding Why the Korean Won Is Weak and What it Means for Korean Stocks
-    </a>
-    <div class="paper-date">June 27 2026</div>
+<a class="paper-title" href="koreanWon.html">
+Understanding Why the Korean Won Is Weak and What It Means for Korean Stocks
+</a>
+<div class="paper-date">
+June 27 2026
 </div>
-    
+</div>
+
+</div>
+
+<!-- EQUITY -->
+
+<div class="research-category" id="equity">
+
+<h3>Equity Research</h3>
+
+<div class="paper">
+<a class="paper-title" href="#">
+Coming Soon
+</a>
+
+<div class="paper-date">
+Investment theses on individual companies.
+</div>
+
+</div>
+
+</div>
+
+<!-- INDUSTRY -->
+
+<div class="research-category" id="industry">
+
+<h3>Industry Research</h3>
+
+<div class="paper">
+
+<a class="paper-title" href="#">
+Coming Soon
+</a>
+
+<div class="paper-date">
+Industry deep dives and thematic research.
+</div>
+
+</div>
+
+</div>
+
 </section>
 
 </body>
+
 </html>
