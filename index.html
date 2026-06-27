@@ -144,24 +144,54 @@ margin-bottom:45px;
     margin-top:70px;
 }
 
-.paper{
-    margin-bottom:32px;
+.paper-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin-top:25px;
+
+    margin-bottom:60px;
+
 }
 
-.paper-title{
-    font-size:26px;
-    font-weight:600;
-    color:#b22222;
+.paper-card{
+
+    display:block;
+
     text-decoration:none;
+
+    color:#222;
+
 }
 
-.paper-title:hover{
-    text-decoration:underline;
+.paper-card img{
+    width:100%;
+    aspect-ratio:16/9;
+    object-fit:cover;
+    border-radius:8px;
 }
 
-.paper-date{
+.paper-category{
+    color:#b22222;
+    font-size:12px;
+    font-weight:700;
+    text-transform:uppercase;
+    margin-top:10px;
+}
+
+.paper-card h4{
+    font-size:20px;
+    line-height:1.35;
+    margin:6px 0;
+}
+
+.paper-meta{
+    font-size:15px;
     color:#666;
-    margin-top:4px;
 }
 
 </style>
@@ -213,8 +243,6 @@ I started this journal to connect what I learn in the classroom with what’s ha
 
 </div>
 
-</header>
-
 </section>
 
 <!-- RESEARCH -->
@@ -240,74 +268,68 @@ Industry Research
 </div>
 
 <!-- MACRO -->
-<h3>Macro & Markets</h3>
+<h3 id="macro">Macro & Markets</h3>
 
-<div class="paper">
-<a class="paper-title" href="hormuz.html">
-The Strait of Hormuz: How a Supply Shock Reshaped Global Oil Markets
-</a>
-<div class="paper-date">
-June 8 2026
-</div>
-</div>
+<div class="paper-grid">
 
-<div class="paper">
-<a class="paper-title" href="chinaPPI.html">
-China's Missing Oil Demand: A Temporary Solution or a Delayed Problem?
-</a>
-<div class="paper-date">
-June 11 2026
-</div>
-</div>
+    <a href="hormuz.html" class="paper-card">
+        <img src="images/hormuz.jpg" alt="Hormuz">
+        <div class="paper-category">Macro</div>
+        <h4>The Strait of Hormuz: How a Supply Shock Reshaped Global Oil Markets</h4>
+        <div class="paper-meta">June 8, 2026</div>
+    </a>
 
-<div class="paper">
-<a class="paper-title" href="transportation.html">
-Why Strong Economic Growth Could Support Transportation Stocks
-</a>
-<div class="paper-date">
-June 25 2026
-</div>
-</div>
+    <a href="chinaPPI.html" class="paper-card">
+        <img src="images/chinaPPI.jpg" alt="China PPI">
+        <div class="paper-category">Macro</div>
+        <h4>China's Missing Oil Demand: A Temporary Solution or a Delayed Problem?</h4>
+        <div class="paper-meta">June 11, 2026</div>
+    </a>
 
-<div class="paper">
-<a class="paper-title" href="nasdaq.html">
-Is the Nasdaq Rally Becoming Too Dependent on AI?
-</a>
-<div class="paper-date">
-June 25 2026
-</div>
-</div>
+    <a href="transportation.html" class="paper-card">
+        <img src="images/transportation.jpg" alt="Transportation">
+        <div class="paper-category">Macro</div>
+        <h4>Why Strong Economic Growth Could Support Transportation Stocks</h4>
+        <div class="paper-meta">June 25, 2026</div>
+    </a>
 
-<div class="paper">
-<a class="paper-title" href="koreanWon.html">
-Understanding Why the Korean Won Is Weak and What It Means for Korean Stocks
-</a>
-<div class="paper-date">
-June 27 2026
-</div>
-</div>
+    <a href="nasdaq.html" class="paper-card">
+        <img src="images/nasdaq.jpg" alt="Nasdaq">
+        <div class="paper-category">Macro</div>
+        <h4>Is the Nasdaq Rally Becoming Too Dependent on AI?</h4>
+        <div class="paper-meta">June 25, 2026</div>
+    </a>
+
+    <a href="koreanWon.html" class="paper-card">
+        <img src="images/koreanWon.jpg" alt="Korean Won">
+        <div class="paper-category">Macro</div>
+        <h4>Understanding Why the Korean Won Is Weak and What It Means for Korean Stocks</h4>
+        <div class="paper-meta">June 27, 2026</div>
+    </a>
 </div>
 
 <!-- EQUITY -->
-<h3>Equity Research</h3>
+<h3 id="equity">Equity Research</h3>
 
-<div class="paper">
-<a class="paper-title" href="#">
-Coming Soon
+<div class="paper-grid">
+    <a href="#" class="paper-card">
+    <img src="images/nvidia.jpg" alt="Nvidia">
+    <div class="paper-category">
+    Equity Research
+    </div>
+    <h4>Coming Soon</h4>
+    <div class="paper-meta">
+
+</div>
+
 </a>
-
-<div class="paper-date">
-Investment theses on individual companies.
-</div>
-
-</div>
 
 </div>
 
 <!-- INDUSTRY -->
-<h3>Industry Research</h3>
+<h3 id="industry">Industry Research</h3>
 
-<div class="paper">
+<div class="paper-grid">
 
 <a class="paper-title" href="#">
 Coming Soon
